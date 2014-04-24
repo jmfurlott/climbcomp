@@ -1,24 +1,11 @@
 climbcomp - Joseph Furlott
 
 
-----------------------------------
-VISITING THE PAGE
-----------------------------------
-- The root of the web app is stored as index.php so to visit the page from a running virtual machine, visit http://192.168.56.102/
-- There is a chance that this IP will change on your computer, so run "ifconfig" to see the inet under em0, and visit that URL instead.
 
-----------------------------------
-PASSWORDS
-----------------------------------
 
-- The user is still dev, however, the password has been changed to being empty.  So just press enter when it asks for a password from dev or sudo.
-- "Tigers Rule" is the PEM password that needs to be issued when trying to set up nginx (or if you restart the server).
-- To access phpmyadmin to look at the database tables,
-the user is "root" and the password is "lionslionslions".
 
-----------------------------------
-NOTES
-----------------------------------
+
+##NOTES
 
 -Edited /etc/hosts.allow
 -Edited /etc/my.cnf with /usr/local/share/mysql/mysql-small.cnf
