@@ -14,8 +14,8 @@ climbcomp - Joseph Furlott
 
 ###NOTES
 
--Edited /etc/hosts.allow
--Edited /etc/my.cnf with /usr/local/share/mysql/mysql-small.cnf
+- Edited /etc/hosts.allow
+- Edited /etc/my.cnf with /usr/local/share/mysql/mysql-small.cnf
 
 
 ###INFORMATION ABOUT BUILDING THE DB
@@ -29,23 +29,24 @@ climbcomp - Joseph Furlott
 - results
 - climbers
 
-users
-----
--first_name
--last_name
--gym_location
--email
--password
--user_id
--ver_code
--verified
+#####users
 
-comps
-----
--user_id         <--- foreign key to users
--comp_id         <--- primary key auto increment
--name            <--- name of the comp
--date            <--- date of the comp
+
+- first_name
+- last_name
+- gym_location
+- email
+- password
+- user_id
+- ver_code
+- verified
+
+#####comps
+
+- user_id         <--- foreign key to users
+- comp_id         <--- primary key auto increment
+- name            <--- name of the comp
+- date            <--- date of the comp
 
 ```
 CREATE TABLE cc_db.comps (
@@ -56,14 +57,14 @@ CREATE TABLE cc_db.comps (
 )
 ```
 
-routes
------
--route_id        <--- primary key
--comp_id         <--- foreign key to comps
--route_num       <--- number of the route in the gym
--color           <--- color in the route in the gym
--points          <--- number of points route is worth
--location        <--- location in the actual gym
+#####routes
+
+- route_id        <--- primary key
+- comp_id         <--- foreign key to comps
+- route_num       <--- number of the route in the gym
+- color           <--- color in the route in the gym
+- points          <--- number of points route is worth
+- location        <--- location in the actual gym
 
 ```
 CREATE TABLE cc_db.routes (
@@ -77,12 +78,12 @@ CREATE TABLE cc_db.routes (
 ```
 
 
-results
--------
--route_id
--comp_id
--climber_id
--num_falls
+#####results
+
+- route_id
+- comp_id
+- climber_id
+- num_falls
 
 ```
 CREATE TABLE cc_db.results (
@@ -93,10 +94,10 @@ CREATE TABLE cc_db.results (
 )
 ```
 
-climbers
---------
--climber_id just autoincrement
--first_name text
+#####climbers
+
+- climber_id just autoincrement
+- first_name text
 
 ```
 CREATE TABLE cc_db.climbers (
